@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/containers/cumpleaños.css';
 
 const Cumpleaños = () => {
     return(

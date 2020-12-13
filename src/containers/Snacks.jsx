@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/containers/snacks.css';
 
 const Snacks = () => {
     return(

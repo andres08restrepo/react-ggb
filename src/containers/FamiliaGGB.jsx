@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/containers/familiaggb.css';
 
 const FamiliaGGB = () => {
     return(

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/containers/combos.css';
 
 const Combos = () => {
     return(

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/containers/calcularacion.css';
 
 const CalculaRacion = () => {
     return(

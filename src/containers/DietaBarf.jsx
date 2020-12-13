@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/containers/dietabarf.css';
 
 const DietaBarf = () => {
     return(

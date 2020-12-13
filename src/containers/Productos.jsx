@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/containers/productos.css';
 
 const Productos = () => {
     return(
