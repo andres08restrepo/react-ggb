@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/containers/cumpleaños.css';
+import '../styles/containers/cumpleaños.scss';
 
 const Cumpleaños = () => {
     return(

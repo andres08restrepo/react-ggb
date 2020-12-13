@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/containers/familiaggb.css';
+import '../styles/containers/familiaggb.scss';
 
 const FamiliaGGB = () => {
     return(

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/containers/preguntasfrecuentes.css';
+import '../styles/containers/preguntasfrecuentes.scss';
 
 const PreguntasFrecuentes = () => {
     return(

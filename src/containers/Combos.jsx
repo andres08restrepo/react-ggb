@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/containers/combos.css';
+import '../styles/containers/combos.scss';
 
 const Combos = () => {
     return(

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/containers/barf.css';
+import '../styles/containers/barf.scss';
 
 const Barf = () => {
     return(

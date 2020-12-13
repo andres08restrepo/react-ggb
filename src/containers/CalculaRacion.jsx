@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/containers/calcularacion.css';
+import '../styles/containers/calcularacion.scss';
 
 const CalculaRacion = () => {
     return(
