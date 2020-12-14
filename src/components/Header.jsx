@@ -7,6 +7,7 @@ const Header = () => {
 
     const [hamburger, setHamburger]= useState("");
     const [menu, setMenu]= useState("");
+    const [submenu, setSubmenu]= useState("");
 
     let toggleHamburger = () => {
         if (hamburger == ""){
@@ -15,6 +16,15 @@ const Header = () => {
         } else{
             setHamburger("");
             setMenu("");
+            setSubmenu("");
+        }
+    }
+
+    let toggleSubmenu = () => {
+        if (submenu == ""){
+            setSubmenu ("activo");
+        } else{
+            setSubmenu("");
         }
     }
 
@@ -26,15 +36,15 @@ const Header = () => {
                         <span className="hamburger-inner"></span>
                     </span>
                 </button>
-                <Link to="/"><img src={logo} alt="Logo GreenGardenBARF"/></Link>
+                <Link to="/" onClick={ () => {setMenu(''); setHamburger(''); setSubmenu('');} }><img src={logo} alt="Logo GreenGardenBARF"/></Link>
                 <i className="fab fa-whatsapp-square" />
             </div>
             <nav className={`menu ${menu}`}>
-                 <ul>
+                 <ul className="menu-principal">
                     <li><Link to="/dieta-barf" onClick={ toggleHamburger }>DIETA BARF</Link></li>
                     <li><Link to="/calcula-racion" onClick={ toggleHamburger }>CALCULA RACION</Link></li>
-                    <li><Link to="/productos" onClick={ toggleHamburger }>PRODUCTOS</Link></li>
-                         <ul>
+                    <li className={ submenu }><Link onClick={ toggleSubmenu }>PRODUCTOS<i class="fas fa-arrow-down"/></Link></li>
+                         <ul className={`submenu ${submenu}`}>
                             <li><Link to="/productos/barf" onClick={ toggleHamburger }>BARF</Link></li>
                             <li><Link to="/productos/snacks" onClick={ toggleHamburger }>SNACKS</Link></li>
                             <li><Link to="/productos/cumpleaños" onClick={ toggleHamburger }>CUMPLEAÑOS</Link></li>
@@ -43,12 +53,13 @@ const Header = () => {
                     <li><Link to="/nosotros" onClick={ toggleHamburger }>NOSOTROS</Link></li>
                     <li><Link to="/familia-ggb" onClick={ toggleHamburger }>FAMILIA GGB</Link></li>
                 </ul>
-                <ul>
+                <ul className="menu-redes">
                     <li>instagram</li>
                     <li>Facebook</li>
                     <li>Whatsapp</li>
                 </ul>
-                <ul>
+                <hr></hr>
+                <ul className="menu-secundario">
                     <li><Link to="/preguntas-frecuentes" onClick={ toggleHamburger }>PREGUNTAS FRECUENTES</Link></li>
                     <li><Link to="/contacto" onClick={ toggleHamburger }>CONTACTO</Link></li>
                 </ul>
